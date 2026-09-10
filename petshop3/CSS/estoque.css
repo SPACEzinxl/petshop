@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* COR DE FUNDO DA PÁGINA */
+body{
+    background-image: url("../img/fundo.png"); /* caminho da imagem */
+    background-size: cover; /* faz a imagem cobrir toda a tela */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* impede repetição da imagem */
+    background-attachment: fixed; /* deixa o fundo fixo ao rolar a página */
+}
+
+/* LAYOUT PRINCIPAL */
+.container{
+    display:flex;
+    min-height:100vh;
+    background:transparent; /* deixa aparecer o fundo */
+}
+
+/* ÁREA DE CONTEÚDO */
+.content{
+    flex:1;
+    margin-left:220px; /* espaço da sidebar */
+    padding:30px;
+    background:transparent; /* não cobre o fundo */
+}
+
+/* TÍTULOS */
+h1{
+    margin-bottom:20px;
+    color:#fcfcfc;
+}
+
+h2{
+    margin-bottom:15px;
+    color:#ffffff;
+}
+
+/* FORMULÁRIO DE CADASTRO */
+.form-estoque{
+    background:#522d00;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.4);
+    max-width:450px;
+}
+
+.form-estoque label{
+    display:block;
+    margin-top:12px;
+    margin-bottom:5px;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+.form-estoque input,
+.form-estoque select{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+/* BOTÃO */
+.form-estoque button{
+    margin-top:15px;
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#8a2b03;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.form-estoque button:hover{
+    background:#e9a185;
+}
+
+/* TABELA DE ESTOQUE */
+.tabela-estoque{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:rgba(255,255,255,0.95); 
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* CABEÇALHO DA TABELA */
+.tabela-estoque th{
+    background:#522d00;
+    color:white;
+    padding:14px;
+    text-align:left;
+    font-size:15px;
+}
+
+/* CÉLULAS */
+.tabela-estoque td{
+    padding:12px;
+    border-bottom:1px solid #e4e4e4;
+    color:#333;
+}
+
+/* LINHAS ALTERNADAS */
+.tabela-estoque tr:nth-child(even){
+    background:#f7f7f7;
+}
+
+/* HOVER NAS LINHAS */
+.tabela-estoque tr:hover{
+    background:#ffe6d9;
+    transition:0.2s;
+}
+
+/* INDICADOR DE ESTOQUE BAIXO */
+.baixo{
+    background:#ffffff !important;
+}
+
+.baixo td{
+    color:#ff0000;
+    font-weight:bold;
+}
+
+/* MENSAGENS */
+p{
+    margin-bottom:10px;
+}

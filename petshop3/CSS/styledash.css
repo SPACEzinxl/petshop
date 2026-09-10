@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FUNDO DA PÁGINA */
+body{
+    background-image: url("../img/fundo.png"); /* caminho da imagem */
+    background-size: cover; /* faz a imagem cobrir toda a tela */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* impede repetição da imagem */
+    background-attachment: fixed; /* deixa o fundo fixo ao rolar a página */
+}
+
+/* CONTAINER */
+.container{
+    display:flex;
+    min-height:100vh;
+    background: transparent;
+}
+
+/* ÁREA DE CONTEÚDO */
+.content{
+    margin-left:240px;
+    padding:40px;
+    background: transparent; /* remove o fundo cinza */
+}
+
+/* TÍTULO */
+.content h1{
+    margin-bottom:30px;
+    color:#ffffff;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+}
+
+/* CARD */
+.card{
+    background: rgba(255,255,255,0.9); /* branco transparente */
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgb(0, 0, 0);
+    text-align:center;
+}
+
+/* TÍTULO DO CARD */
+.card h3{
+    color:#555;
+    margin-bottom:10px;
+}
+
+/* NÚMERO DO CARD */
+.card p{
+    font-size:32px;
+    font-weight:bold;
+    color:#3f8cff;
+}
+
+/* CARD DE ALERTA */
+.card.alerta{
+    border-left:6px solid #e74c3c;
+}
+
+.card.alerta p{
+    color:#e74c3c;
+}

@@ -1,0 +1,130 @@
+/* Configuração padrão para todos os elementos */
+* {
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0; /* Remove espaçamento interno padrão */
+    box-sizing: border-box; /* Faz padding e borda entrarem no cálculo de largura/altura */
+    font-family: Arial, sans-serif; /* Define a fonte padrão da página */
+}
+
+/* Configuração do corpo da página */
+body {
+    background: #bdb6ff; /* Cor de fundo da página */
+    height: 100vh; /* Altura da página igual à altura da tela */
+}
+
+/* Container principal que divide a tela em duas partes */
+.container {
+    display: flex; /* Usa flexbox para alinhar os elementos lado a lado */
+    height: 100vh; /* Ocupa toda a altura da tela */
+}
+
+/* LADO ESQUERDO DA TELA */
+.left {
+    width: 40%; /* Ocupa 40% da largura da tela */
+    background: #7a4a32; /* Cor de fundo marrom */
+    display: flex; /* Ativa flexbox */
+    flex-direction: column; /* Organiza elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+/* Título do lado esquerdo */
+.left h2 {
+    color: #f4a261; /* Cor do texto */
+    margin-top: 15px; /* Espaço acima do título */
+}
+
+/* Estilo da logo */
+.logo {
+    width: 180px; /* Define largura da imagem */
+}
+
+/* LADO DIREITO DA TELA */
+.right {
+    width: 60%; /* Ocupa 60% da largura da tela */
+    background: #fff; /* Fundo branco */
+    position: relative; /* Permite posicionar elementos absolutos dentro dele */
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Imagem do cachorro decorativa */
+.dog {
+    position: absolute; /* Posicionamento absoluto dentro do .right */
+    top: 40px; /* Distância do topo */
+    right: 80px; /* Distância da direita */
+    width: 80px; /* Tamanho da imagem */
+}
+
+/* Caixa do formulário de login */
+.login-box {
+    width: 350px; /* Largura da caixa de login */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 25px; /* Espaçamento interno */
+}
+
+/* Título dentro da caixa de login */
+.login-box h3 {
+    text-align: center; /* Centraliza o texto */
+    border-bottom: 2px solid #f4a261; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaço abaixo do texto */
+    color: #f4a261; /* Cor do texto */
+    margin-bottom: 20px; /* Espaço abaixo */
+}
+
+/* Labels dos campos */
+.login-box label{
+    font-size: 14px; /* Tamanho da fonte */
+    color: #555; /* Cor do texto */
+}
+
+/* Campos de entrada */
+.login-box input {
+    width: 100%; /* Ocupa toda a largura */
+    padding: 10px; /* Espaçamento interno */
+    margin: 8px 0 15px; /* Espaçamento externo */
+    border-radius: 6px; /* Bordas arredondadas */
+    border: none; /* Remove borda padrão */
+    background: #eee; /* Cor de fundo do campo */
+}
+
+/* Link "Esqueceu a senha" */
+.esqueceu {
+    font-size: 12px; /* Texto pequeno */
+    color: #f4a261; /* Cor laranja */
+    float: right; /* Alinha à direita */
+    text-decoration: none; /* Remove sublinhado */
+    margin-bottom: 15px; /* Espaço abaixo */
+}
+
+/* Botão de login */
+button {
+    width: 100%; /* Ocupa toda a largura */
+    padding: 10px; /* Espaçamento interno */
+    background: #f4a261; /* Cor de fundo */
+    border: none; /* Remove borda */
+    border-radius: none; /* Sem bordas arredondadas */
+    color: #fff; /* Cor do texto */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Cursor de clique */
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    background: #e76f51; /* Muda a cor do botão */
+}
+
+/* Área de cadastro abaixo do login */
+.cadastro {
+    text-align: center; /* Centraliza o texto */
+    font-size: 12px; /* Texto pequeno */
+    margin-top: 15px; /* Espaço acima */
+}
+
+/* Link de cadastro */
+.cadastro a {
+    color: #f4a261; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+}

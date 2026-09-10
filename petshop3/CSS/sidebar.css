@@ -1,0 +1,62 @@
+/* Configuração padrão para todos os elementos da página */
+*{
+    margin:0; /* Remove margens padrão do navegador */
+    padding:0; /* Remove espaçamento interno padrão */
+    box-sizing:border-box; /* Inclui padding e borda no cálculo do tamanho */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão */
+}
+
+/* SIDEBAR (MENU LATERAL) */
+.sidebar{
+    width:220px; /* Largura da barra lateral */
+    height:100vh; /* Altura ocupando toda a tela */
+    background:#8B5E3C; /* Cor de fundo marrom */
+    position:fixed; /* Fixa a sidebar na tela */
+    left:0; /* Encosta no lado esquerdo */
+    top:0; /* Começa no topo da página */
+    padding:25px; /* Espaçamento interno */
+    color:white; /* Cor do texto */
+}
+
+/* TÍTULO DA SIDEBAR */
+.sidebar h2{
+    margin-bottom:40px; /* Espaço abaixo do título */
+    font-size:22px; /* Tamanho da fonte */
+}
+
+/* LISTA DO MENU */
+.sidebar ul{
+    list-style:none; /* Remove os pontos da lista */
+}
+
+/* ITENS DO MENU */
+.sidebar ul li{
+    margin-bottom:15px; /* Espaço entre os itens */
+}
+
+/* LINKS DO MENU */
+.sidebar ul li a{
+    display:block; /* Faz o link ocupar toda a linha */
+    text-decoration:none; /* Remove sublinhado */
+    color:white; /* Cor do texto */
+    font-size:18px; /* Tamanho da fonte */
+    padding:12px 15px; /* Espaçamento interno */
+    border-radius:8px; /* Bordas arredondadas */
+    transition:0.3s; /* Animação suave ao passar o mouse */
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.sidebar ul li a:hover{
+    background:#3D2412; /* Cor de fundo quando passa o mouse */
+}
+
+/* ITEM ATIVO (PÁGINA ATUAL) */
+.sidebar ul li.active a{
+    background:#3D2412; /* Destaca o item da página atual */
+}
+
+/* CONTEÚDO PRINCIPAL */
+.content{ 
+    margin-left:240px; 
+    padding:40px;
+    background: transparent; /* remove o fundo cinza */ }
